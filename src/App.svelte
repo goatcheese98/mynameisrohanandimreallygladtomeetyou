@@ -214,7 +214,7 @@
   <section id="intro" class="section">
     <div class="hero-content">
       <div class="profile-image-container reveal">
-        <img src="/headshot.jpeg" alt="Headshot of Rohan Jasani in suit, black and white" class="profile-image" />
+        <img src="headshot.jpeg" alt="Headshot of Rohan Jasani in suit, black and white" class="profile-image" />
       </div>
       <h1 class="hero-title">Rohan Jasani</h1>
       <p class="hero-subtitle">MBAN candidate — Data Analytics & Visualization</p>
@@ -226,7 +226,7 @@
       <div class="hero-cta reveal">
         <a class="btn btn-primary" href="mailto:jasani.rohan@gmail.com">Email me</a>
         <a class="btn btn-secondary" href="https://www.linkedin.com/in/rohan-jasani-451a219b/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-        <a class="btn" href="/rohan-jasani-resume.pdf" download="rohan-jasani-resume-incomplete.pdf" target="_blank">Download resume</a>
+        <a class="btn" href="rohan-jasani-resume.pdf" download="rohan-jasani-resume-incomplete.pdf" target="_blank">Download resume</a>
       </div>
       <div class="scroll-indicator">
         <span>Scroll</span>
