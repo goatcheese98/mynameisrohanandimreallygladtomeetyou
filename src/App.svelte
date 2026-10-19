@@ -25,7 +25,7 @@
 <header class="site-header">
   <a class="brand" href="#intro">Rohan Jasani</a>
   <nav aria-label="Sections">
-    {#each sections as section}
+    {#each sections as section (section.id)}
       <a href={`#${section.id}`}>{section.label}</a>
     {/each}
   </nav>

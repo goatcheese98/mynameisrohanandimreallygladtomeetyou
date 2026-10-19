@@ -19,6 +19,7 @@
     "src/**/*.ts",
     "src/**/*.svelte",
     "tests/**/*.ts",
-    "playwright.config.ts"
+    "playwright.config.ts",
+    "eslint.config.ts"
   ]
 }

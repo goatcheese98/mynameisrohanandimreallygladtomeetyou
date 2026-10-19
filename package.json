@@ -9,19 +9,24 @@
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist",
     "typecheck": "svelte-check --tsconfig ./tsconfig.json --fail-on-warnings",
-    "lint": "prettier --check src/App.svelte src/app.css \"src/*.ts\" tests playwright.config.ts tsconfig.json package.json .prettierrc.json docs README.md .github/workflows/quality.yml",
-    "test": "playwright test"
+    "lint": "eslint --flag unstable_native_nodejs_ts_config src/App.svelte \"src/*.ts\" tests playwright.config.ts eslint.config.ts && npm run format:check",
+    "test": "playwright test",
+    "format:check": "prettier --check src/App.svelte src/app.css \"src/*.ts\" tests playwright.config.ts tsconfig.json package.json .prettierrc.json docs README.md .github/workflows/quality.yml eslint.config.ts"
   },
   "devDependencies": {
+    "@eslint/js": "9.39.0",
     "@playwright/test": "1.56.1",
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "@types/node": "24.10.0",
+    "eslint": "9.39.0",
+    "eslint-plugin-svelte": "3.12.4",
     "gh-pages": "^6.3.0",
     "prettier": "3.6.2",
     "prettier-plugin-svelte": "3.4.0",
     "svelte": "^5.39.6",
     "svelte-check": "4.3.3",
     "typescript": "5.9.3",
+    "typescript-eslint": "8.46.2",
     "vite": "^7.1.7"
   },
   "dependencies": {

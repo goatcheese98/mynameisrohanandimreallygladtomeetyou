@@ -14,7 +14,7 @@ npm run dev
 
 `npm run build` creates the client bundle, renders the same Svelte component to HTML, and inserts it into `dist/index.html`. Static content and native anchor navigation work without JavaScript; quote selection becomes available after hydration. No timers, scroll interception or background animation remain. System color preference selects the LUM light/dark palette. Geist fonts are self-hosted.
 
-`npm run lint` is a read-only Prettier check of the changed source, tests and documentation; Svelte compiler accessibility diagnostics are enforced by `typecheck`. This is not an ESLint gate or a full-repository TypeScript migration. The unused starter Counter and existing Vite/Svelte configuration remain JavaScript.
+`npm run lint` runs read-only ESLint recommended rules for the touched TypeScript and Svelte files, then a Prettier formatting check. Svelte compiler accessibility diagnostics are also enforced by `typecheck`. This is not a full-repository TypeScript migration. The unused starter Counter and existing Vite/Svelte configuration remain JavaScript. The ESLint TypeScript configuration uses Node 24 native type stripping.
 
 Cloud browsers can use `CHROMIUM_PATH=/usr/bin/chromium npm test`. CI uses Playwright's pinned Chromium. Tests run against a freshly built preview, with local fixtures and no external provider requests. See [design decisions](docs/design/lum-portfolio.md) and [verification](docs/verification.md).
 
