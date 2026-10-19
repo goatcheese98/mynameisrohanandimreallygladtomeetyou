@@ -1,0 +1,45 @@
+[
+  {
+    "command": "npm ci --cache /workspace/onboarding/npm-cache --offline --no-audit --no-fund",
+    "exit": 0
+  },
+  {
+    "command": "npm run typecheck",
+    "exit": 0
+  },
+  {
+    "command": "npm run lint",
+    "exit": 0
+  },
+  {
+    "command": "npm run build",
+    "exit": 0
+  },
+  {
+    "command": "npm test",
+    "exit": 0
+  },
+  {
+    "command": "node /workspace/work/lum/freshzoom.cjs",
+    "exit": 0,
+    "layout_width": 320,
+    "outer_width": 640,
+    "device_pixel_ratio": 2
+  },
+  {
+    "command": "node /workspace/work/lum/profilezoom.cjs",
+    "exit": 0,
+    "layout_width": 720,
+    "outer_width": 1440,
+    "device_pixel_ratio": 2
+  },
+  {
+    "command": "node /workspace/work/lum/dev-check.cjs",
+    "exit": 0
+  },
+  {
+    "command": "production artifact SHA-256 map comparison after development-entry fix",
+    "exit": 0,
+    "identical": true
+  }
+]
