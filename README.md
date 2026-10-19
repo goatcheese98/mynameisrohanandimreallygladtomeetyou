@@ -1,56 +1,25 @@
-# Rohan Jasani - Interactive Introduction
+# Rohan Jasani — assignment portfolio
 
-A creative, animated single-page introduction built with Svelte and GSAP.
+Svelte 5 / Vite introduction created for BAIT 518, Assignment 0. Preserves the published introduction, About, Journey, Skills, headshot and contact destinations. Selected work currently has an honest empty state because this repository contains no case studies.
 
-## Features
-
-- **Smooth Scroll Navigation**: Navigate between sections with smooth scrolling and snap-to-section behavior
-- **GSAP Animations**: Fluid entrance animations and continuous floating effects
-- **Particle Background**: Animated particles for visual interest
-- **Navigation Dots**: Quick section navigation with visual indicators
-- **Black & White Aesthetic**: Professional monochrome design matching the headshot
-- **Responsive Design**: Works beautifully on all screen sizes
-- **Interactive Elements**: Hover effects and smooth transitions throughout
-
-## Sections
-
-1. **Hero/Intro**: Introduction with profile photo and title
-2. **About Me**: Personal introduction and key information
-3. **My Journey**: Timeline of professional and academic growth
-4. **Skills & Tools**: Technical skills, tools, and soft skills
-
-## Running the Application
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
+```sh
+npm ci
+npm run typecheck
+npm run lint
 npm run build
-
-# Preview production build
-npm run preview
+npx playwright install chromium
+npm test
+npm run dev
 ```
 
-## Technologies Used
+`npm run build` creates the client bundle, renders the same Svelte component to HTML, and inserts it into `dist/index.html`. Static content and native anchor navigation work without JavaScript; quote selection becomes available after hydration. No timers, scroll interception or background animation remain. System color preference selects the LUM light/dark palette. Geist fonts are self-hosted.
 
-- **Svelte**: Modern reactive framework
-- **Vite**: Fast build tool and dev server
-- **GSAP**: Professional-grade animation library
-- **CSS3**: Advanced styling with glassmorphism effects
+`npm run lint` is a read-only Prettier check of the changed source, tests and documentation; Svelte compiler accessibility diagnostics are enforced by `typecheck`. This is not an ESLint gate or a full-repository TypeScript migration. The unused starter Counter and existing Vite/Svelte configuration remain JavaScript.
 
-## Design Philosophy
+Cloud browsers can use `CHROMIUM_PATH=/usr/bin/chromium npm test`. CI uses Playwright's pinned Chromium. Tests run against a freshly built preview, with local fixtures and no external provider requests. See [design decisions](docs/design/lum-portfolio.md) and [verification](docs/verification.md).
 
-The design follows a minimalist black and white aesthetic with:
-- High contrast for readability
-- Subtle animations for engagement
-- Glassmorphism effects for modern look
-- Clean typography and spacing
-- Professional yet creative presentation
+## Hosting and AstroWebsite
 
----
+This repository remains a separate assignment portfolio. The brief identifies a newer AstroWebsite; maintenance ownership and whether both should be hosted are unresolved. This slice neither deletes nor redirects either project, selects a domain, or authorizes duplicate deployment.
 
-Created for BAIT 518 - Assignment 0
+The existing `wrangler.jsonc` points to `dist`, and the static build is verified locally in cloud. No Cloudflare API was called, no credentials were provisioned, and no hosting or release was performed. The legacy `deploy` command is retained for compatibility and was not run. Decide maintenance ownership before any future hosting change.
