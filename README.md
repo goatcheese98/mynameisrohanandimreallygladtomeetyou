@@ -22,4 +22,4 @@ Cloud browsers can use `CHROMIUM_PATH=/usr/bin/chromium npm test`. CI uses Playw
 
 This repository remains a separate assignment portfolio. The brief identifies a newer AstroWebsite; maintenance ownership and whether both should be hosted are unresolved. This slice neither deletes nor redirects either project, selects a domain, or authorizes duplicate deployment.
 
-The existing `wrangler.jsonc` points to `dist`, and the static build is verified locally in cloud. No Cloudflare API was called, no credentials were provisioned, and no hosting or release was performed. The legacy `deploy` command is retained for compatibility and was not run. Decide maintenance ownership before any future hosting change.
+The assets-only `wrangler.jsonc` points to `dist`; deterministic builds, an official dry-run, and native local routing/header checks are covered by the [Cloudflare artifact handoff](docs/cloudflare-deployment.md). No Cloudflare API was called, no credentials were provisioned, and no hosting or release was performed. The legacy `deploy` command is retained for compatibility and was not run. Decide maintenance ownership before any future hosting change.

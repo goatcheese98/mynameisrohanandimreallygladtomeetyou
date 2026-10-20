@@ -1,0 +1,34 @@
+[
+  {
+    "command": "npm ci --cache /workspace/onboarding/npm-cache --offline --no-audit --no-fund",
+    "exit": 0
+  },
+  {
+    "command": "npm run typecheck",
+    "exit": 0
+  },
+  {
+    "command": "npm run lint",
+    "exit": 0
+  },
+  {
+    "command": "npm run build:verify",
+    "exit": 0
+  },
+  {
+    "command": "npm run check:cloudflare",
+    "exit": 0
+  },
+  {
+    "command": "npm test",
+    "exit": 0
+  },
+  {
+    "command": "npm run test:cloudflare",
+    "exit": 0
+  },
+  {
+    "command": "git diff --check",
+    "exit": 0
+  }
+]

@@ -1,0 +1,143 @@
+{
+  "registry": "https://registry.npmjs.org/-/npm/v1/security/advisories/bulk",
+  "bundledSvelte": {
+    "before": "5.41.1",
+    "after": "5.55.7",
+    "matchingAdvisoriesBefore": 7,
+    "matchingAdvisoriesAfter": 0
+  },
+  "productionDependencies": [
+    "@fontsource/geist@5.2.6",
+    "@fontsource/geist-mono@5.2.6"
+  ],
+  "remainingBuildDevAdvisories": {
+    "braces": [
+      {
+        "severity": "high",
+        "title": "braces vulnerable to stack-exhaustion denial of service through deeply nested patterns",
+        "url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+        "range": "<=3.0.3"
+      }
+    ],
+    "picomatch": [
+      {
+        "severity": "moderate",
+        "title": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+        "url": "https://github.com/advisories/GHSA-3v7f-55p6-f55p",
+        "range": "<2.3.2"
+      },
+      {
+        "severity": "moderate",
+        "title": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+        "url": "https://github.com/advisories/GHSA-3v7f-55p6-f55p",
+        "range": ">=4.0.0 <4.0.4"
+      },
+      {
+        "severity": "high",
+        "title": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+        "url": "https://github.com/advisories/GHSA-c2c7-rcm5-vvqj",
+        "range": "<2.3.2"
+      },
+      {
+        "severity": "high",
+        "title": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+        "url": "https://github.com/advisories/GHSA-c2c7-rcm5-vvqj",
+        "range": ">=4.0.0 <4.0.4"
+      }
+    ],
+    "nanoid": [
+      {
+        "severity": "high",
+        "title": "nanoid: non-secure generators can loop indefinitely with negative size",
+        "url": "https://github.com/advisories/GHSA-28wg-ghj8-5hjv",
+        "range": "<3.3.16"
+      },
+      {
+        "severity": "high",
+        "title": "nanoid: custom generators can loop indefinitely when size is zero",
+        "url": "https://github.com/advisories/GHSA-2v37-7h3g-55p8",
+        "range": "<3.3.18"
+      },
+      {
+        "severity": "high",
+        "title": "nanoid: Integer Overflow or Wraparound",
+        "url": "https://github.com/advisories/GHSA-xwg4-73v4-xw9w",
+        "range": "<3.3.12"
+      }
+    ],
+    "postcss": [
+      {
+        "severity": "moderate",
+        "title": "PostCSS: incomplete fix of GHSA-6g55-p6wh-862q \u2014 attacker-controlled sourceMappingURL reads arbitrary .map files when `from` is unset",
+        "url": "https://github.com/advisories/GHSA-fxqj-rqcc-2cmp",
+        "range": "<=8.5.22"
+      },
+      {
+        "severity": "moderate",
+        "title": "PostCSS has XSS via Unescaped </style> in its CSS Stringify Output",
+        "url": "https://github.com/advisories/GHSA-qx2v-qp2m-jg93",
+        "range": "<8.5.10"
+      },
+      {
+        "severity": "high",
+        "title": "PostCSS: Arbitrary file read and information disclosure via attacker-controlled sourceMappingURL in CSS comments",
+        "url": "https://github.com/advisories/GHSA-6g55-p6wh-862q",
+        "range": "<=8.5.11"
+      },
+      {
+        "severity": "high",
+        "title": "PostCSS: Path Traversal in Previous Source Map Auto-Loading (sourceMappingURL) leads to Arbitrary .map File Disclosure",
+        "url": "https://github.com/advisories/GHSA-r28c-9q8g-f849",
+        "range": "<=8.5.17"
+      }
+    ],
+    "rollup": [
+      {
+        "severity": "high",
+        "title": "Rollup 4 has Arbitrary File Write via Path Traversal",
+        "url": "https://github.com/advisories/GHSA-mw96-cpmx-2vgc",
+        "range": ">=4.0.0 <4.59.0"
+      }
+    ],
+    "source-map-js": [
+      {
+        "severity": "high",
+        "title": "source-map-js allows event-loop denial of service through indexed source-map section offsets",
+        "url": "https://github.com/advisories/GHSA-68fv-2mgg-jv7q",
+        "range": ">=1.0.0 <1.2.2"
+      }
+    ],
+    "vite": [
+      {
+        "severity": "moderate",
+        "title": "launch-editor: NTLMv2 hash disclosure via UNC path handling on Windows",
+        "url": "https://github.com/advisories/GHSA-v6wh-96g9-6wx3",
+        "range": ">=7.0.0 <=7.3.4"
+      },
+      {
+        "severity": "moderate",
+        "title": "Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling",
+        "url": "https://github.com/advisories/GHSA-4w7w-66w2-5vf9",
+        "range": ">=7.0.0 <=7.3.1"
+      },
+      {
+        "severity": "high",
+        "title": "Vite: `server.fs.deny` bypassed with queries",
+        "url": "https://github.com/advisories/GHSA-v2wj-q39q-566r",
+        "range": ">=7.1.0 <=7.3.1"
+      },
+      {
+        "severity": "high",
+        "title": "Vite Vulnerable to Arbitrary File Read via Vite Dev Server WebSocket",
+        "url": "https://github.com/advisories/GHSA-p9ff-h696-f583",
+        "range": ">=7.0.0 <=7.3.1"
+      },
+      {
+        "severity": "high",
+        "title": "vite: `server.fs.deny` bypass on Windows alternate paths",
+        "url": "https://github.com/advisories/GHSA-fx2h-pf6j-xcff",
+        "range": ">=7.0.0 <=7.3.4"
+      }
+    ]
+  }
+}
