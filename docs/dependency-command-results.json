@@ -1,0 +1,129 @@
+{
+  "checkpoint": "25072484b75bb4ac76c02a54e3583e2b6c0868e0",
+  "dependencyCommit": "afe0bb26c70ba65c45c789d7c8796c2503fa3deb",
+  "results": [
+    {
+      "command": "npm ci --cache /workspace/onboarding/npm-cache --offline --no-audit --no-fund",
+      "exit": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "exit": 0
+    },
+    {
+      "command": "npm run lint",
+      "exit": 0
+    },
+    {
+      "command": "npm run build:verify",
+      "exit": 0
+    },
+    {
+      "command": "npm run check:cloudflare",
+      "exit": 0
+    },
+    {
+      "command": "npm test",
+      "exit": 0
+    },
+    {
+      "command": "npm run test:cloudflare",
+      "exit": 0
+    },
+    {
+      "command": "git diff --check",
+      "exit": 0
+    }
+  ],
+  "originalBrowserCasesPassed": 15,
+  "cloudflareBrowserCasesPassed": 22,
+  "artifactSHA256": "2830859f415d654269a22e2e53d848d1d1af9091c75bdf83b48865d749e785ea",
+  "artifactIdenticalToCheckpoint": true,
+  "screenshots": [
+    {
+      "checkpointScreenshot": "docs/design/screens/cloudflare-404/404-dark-1440.png",
+      "freshCapture": "test-results/cloudflare/cloudflare-404-dark-1440-s-a7ad6-recovery-without-JavaScript/404-dark-1440.png",
+      "checkpointSHA256": "8d8d7de623f7127291a7f55212ee76ac38502cbd7ec9f9f254b796b7b1e149c3",
+      "freshSHA256": "8d8d7de623f7127291a7f55212ee76ac38502cbd7ec9f9f254b796b7b1e149c3",
+      "identical": true
+    },
+    {
+      "checkpointScreenshot": "docs/design/screens/cloudflare-404/404-dark-320.png",
+      "freshCapture": "test-results/cloudflare/cloudflare-404-dark-320-st-3bd06-recovery-without-JavaScript/404-dark-320.png",
+      "checkpointSHA256": "7073040088a10a7dc0776dcd794087b0c5289d8f8622abf859697dfa1212db13",
+      "freshSHA256": "7073040088a10a7dc0776dcd794087b0c5289d8f8622abf859697dfa1212db13",
+      "identical": true
+    },
+    {
+      "checkpointScreenshot": "docs/design/screens/cloudflare-404/404-dark-768.png",
+      "freshCapture": "test-results/cloudflare/cloudflare-404-dark-768-st-a9c04-recovery-without-JavaScript/404-dark-768.png",
+      "checkpointSHA256": "d1aeeb1679a2c807658dc2d06c2cac9d409fa26aab684219d678107ae63a9371",
+      "freshSHA256": "d1aeeb1679a2c807658dc2d06c2cac9d409fa26aab684219d678107ae63a9371",
+      "identical": true
+    },
+    {
+      "checkpointScreenshot": "docs/design/screens/cloudflare-404/404-light-1440.png",
+      "freshCapture": "test-results/cloudflare/cloudflare-404-light-1440--3dd6e-recovery-without-JavaScript/404-light-1440.png",
+      "checkpointSHA256": "f2ada6401dfce9f6894781f9025f2d54c1db90800089f60d8aedbd324bbc2b08",
+      "freshSHA256": "f2ada6401dfce9f6894781f9025f2d54c1db90800089f60d8aedbd324bbc2b08",
+      "identical": true
+    },
+    {
+      "checkpointScreenshot": "docs/design/screens/cloudflare-404/404-light-320.png",
+      "freshCapture": "test-results/cloudflare/cloudflare-404-light-320-s-ef1cf-recovery-without-JavaScript/404-light-320.png",
+      "checkpointSHA256": "05feee5a08ed1d0cd26ec03068a86f7d2af4d0d2ed51ca4632cb0009c95e346b",
+      "freshSHA256": "05feee5a08ed1d0cd26ec03068a86f7d2af4d0d2ed51ca4632cb0009c95e346b",
+      "identical": true
+    },
+    {
+      "checkpointScreenshot": "docs/design/screens/cloudflare-404/404-light-768.png",
+      "freshCapture": "test-results/cloudflare/cloudflare-404-light-768-s-5d628-recovery-without-JavaScript/404-light-768.png",
+      "checkpointSHA256": "2e649221d241bdde4e0ec470630d9b837932c79e07d502ea717715eed7fa8547",
+      "freshSHA256": "2e649221d241bdde4e0ec470630d9b837932c79e07d502ea717715eed7fa8547",
+      "identical": true
+    },
+    {
+      "checkpointScreenshot": "docs/design/screens/dark-1440.png",
+      "freshCapture": "test-results/cloudflare/portfolio-dark-1440px-readable-layout-targets-and-contrast/dark-1440.png",
+      "checkpointSHA256": "1fe7540e666689b2474dbd88c4e20eb2ef8fa560d8f9b5b9b5a66ed063a50be6",
+      "freshSHA256": "1fe7540e666689b2474dbd88c4e20eb2ef8fa560d8f9b5b9b5a66ed063a50be6",
+      "identical": true
+    },
+    {
+      "checkpointScreenshot": "docs/design/screens/dark-320.png",
+      "freshCapture": "test-results/cloudflare/portfolio-dark-320px-readable-layout-targets-and-contrast/dark-320.png",
+      "checkpointSHA256": "620f617f88d591b417ad67dc5acdc281dc41831c2f33656e2d22899a81dce16e",
+      "freshSHA256": "620f617f88d591b417ad67dc5acdc281dc41831c2f33656e2d22899a81dce16e",
+      "identical": true
+    },
+    {
+      "checkpointScreenshot": "docs/design/screens/dark-768.png",
+      "freshCapture": "test-results/cloudflare/portfolio-dark-768px-readable-layout-targets-and-contrast/dark-768.png",
+      "checkpointSHA256": "461443f49aeaffdba6ad5c40b1f1fd3b65b91ac4f66fc56ac0870308051eed07",
+      "freshSHA256": "461443f49aeaffdba6ad5c40b1f1fd3b65b91ac4f66fc56ac0870308051eed07",
+      "identical": true
+    },
+    {
+      "checkpointScreenshot": "docs/design/screens/light-1440.png",
+      "freshCapture": "test-results/cloudflare/portfolio-light-1440px-readable-layout-targets-and-contrast/light-1440.png",
+      "checkpointSHA256": "af59e4da8ae0a0c532c9530b225d06aecea8542c77025b2e3a89b2417de4beb6",
+      "freshSHA256": "af59e4da8ae0a0c532c9530b225d06aecea8542c77025b2e3a89b2417de4beb6",
+      "identical": true
+    },
+    {
+      "checkpointScreenshot": "docs/design/screens/light-320.png",
+      "freshCapture": "test-results/cloudflare/portfolio-light-320px-readable-layout-targets-and-contrast/light-320.png",
+      "checkpointSHA256": "4586e555f79aa9a7cd98bcb800fa036d891647098e23f9db91a9b962bf12fcce",
+      "freshSHA256": "4586e555f79aa9a7cd98bcb800fa036d891647098e23f9db91a9b962bf12fcce",
+      "identical": true
+    },
+    {
+      "checkpointScreenshot": "docs/design/screens/light-768.png",
+      "freshCapture": "test-results/cloudflare/portfolio-light-768px-readable-layout-targets-and-contrast/light-768.png",
+      "checkpointSHA256": "b956c5064c5e39340094da840922c70b3be67b3e5c60a67b2f1e0e42b176b904",
+      "freshSHA256": "b956c5064c5e39340094da840922c70b3be67b3e5c60a67b2f1e0e42b176b904",
+      "identical": true
+    }
+  ],
+  "execution": "Cloud Linux, Node24.19.0/npm11.9.0, system Chromium; outbound guard preloaded for dry-run and Cloudflare browser runtime"
+}
