@@ -1,0 +1,1921 @@
+{
+  "registry": "https://registry.npmjs.org/-/npm/v1/security/advisories/bulk",
+  "bundledSvelte": {
+    "before": "5.41.1",
+    "after": "5.55.7",
+    "matchingAdvisoriesBefore": 7,
+    "matchingAdvisoriesAfter": 0
+  },
+  "productionDependencies": [
+    "@fontsource/geist@5.2.6",
+    "@fontsource/geist-mono@5.2.6"
+  ],
+  "checkpoint": "25072484b75bb4ac76c02a54e3583e2b6c0868e0",
+  "checkpointBuildDevAdvisories": {
+    "braces": [
+      {
+        "severity": "high",
+        "title": "braces vulnerable to stack-exhaustion denial of service through deeply nested patterns",
+        "url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+        "range": "<=3.0.3"
+      }
+    ],
+    "picomatch": [
+      {
+        "severity": "moderate",
+        "title": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+        "url": "https://github.com/advisories/GHSA-3v7f-55p6-f55p",
+        "range": "<2.3.2"
+      },
+      {
+        "severity": "moderate",
+        "title": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+        "url": "https://github.com/advisories/GHSA-3v7f-55p6-f55p",
+        "range": ">=4.0.0 <4.0.4"
+      },
+      {
+        "severity": "high",
+        "title": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+        "url": "https://github.com/advisories/GHSA-c2c7-rcm5-vvqj",
+        "range": "<2.3.2"
+      },
+      {
+        "severity": "high",
+        "title": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+        "url": "https://github.com/advisories/GHSA-c2c7-rcm5-vvqj",
+        "range": ">=4.0.0 <4.0.4"
+      }
+    ],
+    "nanoid": [
+      {
+        "severity": "high",
+        "title": "nanoid: non-secure generators can loop indefinitely with negative size",
+        "url": "https://github.com/advisories/GHSA-28wg-ghj8-5hjv",
+        "range": "<3.3.16"
+      },
+      {
+        "severity": "high",
+        "title": "nanoid: custom generators can loop indefinitely when size is zero",
+        "url": "https://github.com/advisories/GHSA-2v37-7h3g-55p8",
+        "range": "<3.3.18"
+      },
+      {
+        "severity": "high",
+        "title": "nanoid: Integer Overflow or Wraparound",
+        "url": "https://github.com/advisories/GHSA-xwg4-73v4-xw9w",
+        "range": "<3.3.12"
+      }
+    ],
+    "postcss": [
+      {
+        "severity": "moderate",
+        "title": "PostCSS: incomplete fix of GHSA-6g55-p6wh-862q \u2014 attacker-controlled sourceMappingURL reads arbitrary .map files when `from` is unset",
+        "url": "https://github.com/advisories/GHSA-fxqj-rqcc-2cmp",
+        "range": "<=8.5.22"
+      },
+      {
+        "severity": "moderate",
+        "title": "PostCSS has XSS via Unescaped </style> in its CSS Stringify Output",
+        "url": "https://github.com/advisories/GHSA-qx2v-qp2m-jg93",
+        "range": "<8.5.10"
+      },
+      {
+        "severity": "high",
+        "title": "PostCSS: Arbitrary file read and information disclosure via attacker-controlled sourceMappingURL in CSS comments",
+        "url": "https://github.com/advisories/GHSA-6g55-p6wh-862q",
+        "range": "<=8.5.11"
+      },
+      {
+        "severity": "high",
+        "title": "PostCSS: Path Traversal in Previous Source Map Auto-Loading (sourceMappingURL) leads to Arbitrary .map File Disclosure",
+        "url": "https://github.com/advisories/GHSA-r28c-9q8g-f849",
+        "range": "<=8.5.17"
+      }
+    ],
+    "rollup": [
+      {
+        "severity": "high",
+        "title": "Rollup 4 has Arbitrary File Write via Path Traversal",
+        "url": "https://github.com/advisories/GHSA-mw96-cpmx-2vgc",
+        "range": ">=4.0.0 <4.59.0"
+      }
+    ],
+    "source-map-js": [
+      {
+        "severity": "high",
+        "title": "source-map-js allows event-loop denial of service through indexed source-map section offsets",
+        "url": "https://github.com/advisories/GHSA-68fv-2mgg-jv7q",
+        "range": ">=1.0.0 <1.2.2"
+      }
+    ],
+    "vite": [
+      {
+        "severity": "moderate",
+        "title": "launch-editor: NTLMv2 hash disclosure via UNC path handling on Windows",
+        "url": "https://github.com/advisories/GHSA-v6wh-96g9-6wx3",
+        "range": ">=7.0.0 <=7.3.4"
+      },
+      {
+        "severity": "moderate",
+        "title": "Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling",
+        "url": "https://github.com/advisories/GHSA-4w7w-66w2-5vf9",
+        "range": ">=7.0.0 <=7.3.1"
+      },
+      {
+        "severity": "high",
+        "title": "Vite: `server.fs.deny` bypassed with queries",
+        "url": "https://github.com/advisories/GHSA-v2wj-q39q-566r",
+        "range": ">=7.1.0 <=7.3.1"
+      },
+      {
+        "severity": "high",
+        "title": "Vite Vulnerable to Arbitrary File Read via Vite Dev Server WebSocket",
+        "url": "https://github.com/advisories/GHSA-p9ff-h696-f583",
+        "range": ">=7.0.0 <=7.3.1"
+      },
+      {
+        "severity": "high",
+        "title": "vite: `server.fs.deny` bypass on Windows alternate paths",
+        "url": "https://github.com/advisories/GHSA-fx2h-pf6j-xcff",
+        "range": ">=7.0.0 <=7.3.4"
+      }
+    ]
+  },
+  "followup": {
+    "scope": "Compatible Vite 7 and transitive patches; no overrides, force upgrades or suppressions",
+    "auditMethod": {
+      "endpoint": "https://registry.npmjs.org/-/npm/v1/security/advisories/bulk",
+      "curlTimeoutSeconds": 30,
+      "processTimeoutSeconds": 35,
+      "coverage": "Every exact version in package-lock.json including dev and optional platforms, semver-matched against every advisory returned by npm bulk endpoint",
+      "beforePackageNames": 300,
+      "afterPackageNames": 304,
+      "beforeAdvisoryRangeMatches": 19,
+      "afterAdvisoryRangeMatches": 1,
+      "capturedAtUTC": "2026-10-20T07:13:08.719156+00:00",
+      "npmCli": {
+        "command": "npm audit --json --fetch-retries=0 --fetch-timeout=15000",
+        "wallTimeoutSeconds": 45,
+        "result": "timeout; complete registry bulk result used, not a clean CLI claim"
+      },
+      "beforeInputSHA256": "0148529cd7a97f9b69671d32cf9f04c346b889d6f03990fc6aa3d609a880121b",
+      "beforeBulkSHA256": "84f99cf980f79b7fd74d0c504e4c7021ae0413d45777d40007a2a00880edf277",
+      "afterInputSHA256": "77990054097a14926c5fc23b9b917a4adcd69497c05f18fddd9ddbf0e83f2a2c",
+      "afterBulkSHA256": "019f991c5dd5f53fc6254db2cd1cce3aecd7f39b07ce80ff34cce0911db448d8"
+    },
+    "before": [
+      {
+        "id": 1240992,
+        "url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+        "title": "braces vulnerable to stack-exhaustion denial of service through deeply nested patterns",
+        "severity": "high",
+        "vulnerable_versions": "<=3.0.3",
+        "cwe": ["CWE-674"],
+        "cvss": {
+          "score": 7.5,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        "installed": [
+          {
+            "path": "node_modules/braces",
+            "version": "3.0.3",
+            "dev": true
+          }
+        ],
+        "name": "braces"
+      },
+      {
+        "id": 1115549,
+        "url": "https://github.com/advisories/GHSA-3v7f-55p6-f55p",
+        "title": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+        "severity": "moderate",
+        "vulnerable_versions": "<2.3.2",
+        "cwe": ["CWE-1321"],
+        "cvss": {
+          "score": 5.3,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        },
+        "installed": [
+          {
+            "path": "node_modules/micromatch/node_modules/picomatch",
+            "version": "2.3.1",
+            "dev": true
+          }
+        ],
+        "name": "picomatch"
+      },
+      {
+        "id": 1115551,
+        "url": "https://github.com/advisories/GHSA-3v7f-55p6-f55p",
+        "title": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+        "severity": "moderate",
+        "vulnerable_versions": ">=4.0.0 <4.0.4",
+        "cwe": ["CWE-1321"],
+        "cvss": {
+          "score": 5.3,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        },
+        "installed": [
+          {
+            "path": "node_modules/picomatch",
+            "version": "4.0.3",
+            "dev": true
+          }
+        ],
+        "name": "picomatch"
+      },
+      {
+        "id": 1115552,
+        "url": "https://github.com/advisories/GHSA-c2c7-rcm5-vvqj",
+        "title": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+        "severity": "high",
+        "vulnerable_versions": "<2.3.2",
+        "cwe": ["CWE-1333"],
+        "cvss": {
+          "score": 7.5,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        "installed": [
+          {
+            "path": "node_modules/micromatch/node_modules/picomatch",
+            "version": "2.3.1",
+            "dev": true
+          }
+        ],
+        "name": "picomatch"
+      },
+      {
+        "id": 1115554,
+        "url": "https://github.com/advisories/GHSA-c2c7-rcm5-vvqj",
+        "title": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+        "severity": "high",
+        "vulnerable_versions": ">=4.0.0 <4.0.4",
+        "cwe": ["CWE-1333"],
+        "cvss": {
+          "score": 7.5,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        "installed": [
+          {
+            "path": "node_modules/picomatch",
+            "version": "4.0.3",
+            "dev": true
+          }
+        ],
+        "name": "picomatch"
+      },
+      {
+        "id": 1138811,
+        "url": "https://github.com/advisories/GHSA-28wg-ghj8-5hjv",
+        "title": "nanoid: non-secure generators can loop indefinitely with negative size",
+        "severity": "high",
+        "vulnerable_versions": "<3.3.16",
+        "cwe": ["CWE-835"],
+        "cvss": {
+          "score": 5.9,
+          "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        "installed": [
+          {
+            "path": "node_modules/nanoid",
+            "version": "3.3.11",
+            "dev": true
+          }
+        ],
+        "name": "nanoid"
+      },
+      {
+        "id": 1139427,
+        "url": "https://github.com/advisories/GHSA-2v37-7h3g-55p8",
+        "title": "nanoid: custom generators can loop indefinitely when size is zero",
+        "severity": "high",
+        "vulnerable_versions": "<3.3.18",
+        "cwe": ["CWE-835"],
+        "cvss": {
+          "score": 5.9,
+          "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        "installed": [
+          {
+            "path": "node_modules/nanoid",
+            "version": "3.3.11",
+            "dev": true
+          }
+        ],
+        "name": "nanoid"
+      },
+      {
+        "id": 1153189,
+        "url": "https://github.com/advisories/GHSA-xwg4-73v4-xw9w",
+        "title": "nanoid: Integer Overflow or Wraparound",
+        "severity": "high",
+        "vulnerable_versions": "<3.3.12",
+        "cwe": ["CWE-190"],
+        "cvss": {
+          "score": 7.4,
+          "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        },
+        "installed": [
+          {
+            "path": "node_modules/nanoid",
+            "version": "3.3.11",
+            "dev": true
+          }
+        ],
+        "name": "nanoid"
+      },
+      {
+        "id": 1130709,
+        "url": "https://github.com/advisories/GHSA-fxqj-rqcc-2cmp",
+        "title": "PostCSS: incomplete fix of GHSA-6g55-p6wh-862q \u2014 attacker-controlled sourceMappingURL reads arbitrary .map files when `from` is unset",
+        "severity": "moderate",
+        "vulnerable_versions": "<=8.5.22",
+        "cwe": ["CWE-22", "CWE-200"],
+        "cvss": {
+          "score": 0,
+          "vectorString": null
+        },
+        "installed": [
+          {
+            "path": "node_modules/postcss",
+            "version": "8.5.6",
+            "dev": true
+          }
+        ],
+        "name": "postcss"
+      },
+      {
+        "id": 1117015,
+        "url": "https://github.com/advisories/GHSA-qx2v-qp2m-jg93",
+        "title": "PostCSS has XSS via Unescaped </style> in its CSS Stringify Output",
+        "severity": "moderate",
+        "vulnerable_versions": "<8.5.10",
+        "cwe": ["CWE-79"],
+        "cvss": {
+          "score": 6.1,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        },
+        "installed": [
+          {
+            "path": "node_modules/postcss",
+            "version": "8.5.6",
+            "dev": true
+          }
+        ],
+        "name": "postcss"
+      },
+      {
+        "id": 1124252,
+        "url": "https://github.com/advisories/GHSA-6g55-p6wh-862q",
+        "title": "PostCSS: Arbitrary file read and information disclosure via attacker-controlled sourceMappingURL in CSS comments",
+        "severity": "high",
+        "vulnerable_versions": "<=8.5.11",
+        "cwe": ["CWE-22", "CWE-200"],
+        "cvss": {
+          "score": 7.5,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        },
+        "installed": [
+          {
+            "path": "node_modules/postcss",
+            "version": "8.5.6",
+            "dev": true
+          }
+        ],
+        "name": "postcss"
+      },
+      {
+        "id": 1139510,
+        "url": "https://github.com/advisories/GHSA-r28c-9q8g-f849",
+        "title": "PostCSS: Path Traversal in Previous Source Map Auto-Loading (sourceMappingURL) leads to Arbitrary .map File Disclosure",
+        "severity": "high",
+        "vulnerable_versions": "<=8.5.17",
+        "cwe": ["CWE-22"],
+        "cvss": {
+          "score": 7.5,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        },
+        "installed": [
+          {
+            "path": "node_modules/postcss",
+            "version": "8.5.6",
+            "dev": true
+          }
+        ],
+        "name": "postcss"
+      },
+      {
+        "id": 1113515,
+        "url": "https://github.com/advisories/GHSA-mw96-cpmx-2vgc",
+        "title": "Rollup 4 has Arbitrary File Write via Path Traversal",
+        "severity": "high",
+        "vulnerable_versions": ">=4.0.0 <4.59.0",
+        "cwe": ["CWE-22"],
+        "cvss": {
+          "score": 0,
+          "vectorString": null
+        },
+        "installed": [
+          {
+            "path": "node_modules/rollup",
+            "version": "4.52.5",
+            "dev": true
+          }
+        ],
+        "name": "rollup"
+      },
+      {
+        "id": 1241209,
+        "url": "https://github.com/advisories/GHSA-68fv-2mgg-jv7q",
+        "title": "source-map-js allows event-loop denial of service through indexed source-map section offsets",
+        "severity": "high",
+        "vulnerable_versions": ">=1.0.0 <1.2.2",
+        "cwe": ["CWE-1284"],
+        "cvss": {
+          "score": 7.5,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        "installed": [
+          {
+            "path": "node_modules/source-map-js",
+            "version": "1.2.1",
+            "dev": true
+          }
+        ],
+        "name": "source-map-js"
+      },
+      {
+        "id": 1120785,
+        "url": "https://github.com/advisories/GHSA-v6wh-96g9-6wx3",
+        "title": "launch-editor: NTLMv2 hash disclosure via UNC path handling on Windows",
+        "severity": "moderate",
+        "vulnerable_versions": ">=7.0.0 <=7.3.4",
+        "cwe": ["CWE-73", "CWE-522"],
+        "cvss": {
+          "score": 0,
+          "vectorString": null
+        },
+        "installed": [
+          {
+            "path": "node_modules/vite",
+            "version": "7.1.11",
+            "dev": true
+          }
+        ],
+        "name": "vite"
+      },
+      {
+        "id": 1116230,
+        "url": "https://github.com/advisories/GHSA-4w7w-66w2-5vf9",
+        "title": "Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling",
+        "severity": "moderate",
+        "vulnerable_versions": ">=7.0.0 <=7.3.1",
+        "cwe": ["CWE-22", "CWE-200"],
+        "cvss": {
+          "score": 0,
+          "vectorString": null
+        },
+        "installed": [
+          {
+            "path": "node_modules/vite",
+            "version": "7.1.11",
+            "dev": true
+          }
+        ],
+        "name": "vite"
+      },
+      {
+        "id": 1116232,
+        "url": "https://github.com/advisories/GHSA-v2wj-q39q-566r",
+        "title": "Vite: `server.fs.deny` bypassed with queries",
+        "severity": "high",
+        "vulnerable_versions": ">=7.1.0 <=7.3.1",
+        "cwe": ["CWE-180", "CWE-284"],
+        "cvss": {
+          "score": 0,
+          "vectorString": null
+        },
+        "installed": [
+          {
+            "path": "node_modules/vite",
+            "version": "7.1.11",
+            "dev": true
+          }
+        ],
+        "name": "vite"
+      },
+      {
+        "id": 1116235,
+        "url": "https://github.com/advisories/GHSA-p9ff-h696-f583",
+        "title": "Vite Vulnerable to Arbitrary File Read via Vite Dev Server WebSocket",
+        "severity": "high",
+        "vulnerable_versions": ">=7.0.0 <=7.3.1",
+        "cwe": ["CWE-200", "CWE-306"],
+        "cvss": {
+          "score": 0,
+          "vectorString": null
+        },
+        "installed": [
+          {
+            "path": "node_modules/vite",
+            "version": "7.1.11",
+            "dev": true
+          }
+        ],
+        "name": "vite"
+      },
+      {
+        "id": 1123526,
+        "url": "https://github.com/advisories/GHSA-fx2h-pf6j-xcff",
+        "title": "vite: `server.fs.deny` bypass on Windows alternate paths",
+        "severity": "high",
+        "vulnerable_versions": ">=7.0.0 <=7.3.4",
+        "cwe": ["CWE-22", "CWE-200"],
+        "cvss": {
+          "score": 7.5,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        },
+        "installed": [
+          {
+            "path": "node_modules/vite",
+            "version": "7.1.11",
+            "dev": true
+          }
+        ],
+        "name": "vite"
+      }
+    ],
+    "after": [
+      {
+        "id": 1240992,
+        "url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+        "title": "braces vulnerable to stack-exhaustion denial of service through deeply nested patterns",
+        "severity": "high",
+        "vulnerable_versions": "<=3.0.3",
+        "cwe": ["CWE-674"],
+        "cvss": {
+          "score": 7.5,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        "installed": [
+          {
+            "path": "node_modules/braces",
+            "version": "3.0.3",
+            "dev": true
+          }
+        ],
+        "name": "braces"
+      }
+    ],
+    "beforeParentEdges": [
+      {
+        "from": {
+          "location": "<repository>"
+        },
+        "to": {
+          "name": "vite",
+          "version": "7.1.11",
+          "location": "node_modules/vite"
+        },
+        "type": "dev",
+        "range": "^7.1.7"
+      },
+      {
+        "from": {
+          "name": "vitefu",
+          "version": "1.1.1",
+          "location": "node_modules/vitefu"
+        },
+        "to": {
+          "name": "vite",
+          "version": "7.1.11",
+          "location": "node_modules/vite"
+        },
+        "type": "peerOptional",
+        "range": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0-beta.0"
+      },
+      {
+        "from": {
+          "name": "@sveltejs/vite-plugin-svelte",
+          "version": "6.2.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte"
+        },
+        "to": {
+          "name": "vitefu",
+          "version": "1.1.1",
+          "location": "node_modules/vitefu"
+        },
+        "type": "prod",
+        "range": "^1.1.1"
+      },
+      {
+        "from": {
+          "location": "<repository>"
+        },
+        "to": {
+          "name": "@sveltejs/vite-plugin-svelte",
+          "version": "6.2.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte"
+        },
+        "type": "dev",
+        "range": "^6.2.1"
+      },
+      {
+        "from": {
+          "name": "@sveltejs/vite-plugin-svelte-inspector",
+          "version": "5.0.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte-inspector"
+        },
+        "to": {
+          "name": "@sveltejs/vite-plugin-svelte",
+          "version": "6.2.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte"
+        },
+        "type": "peer",
+        "range": "^6.0.0-next.0"
+      },
+      {
+        "from": {
+          "name": "@sveltejs/vite-plugin-svelte",
+          "version": "6.2.1"
+        },
+        "to": {
+          "name": "@sveltejs/vite-plugin-svelte-inspector",
+          "version": "5.0.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte-inspector"
+        },
+        "type": "prod",
+        "range": "^5.0.0"
+      },
+      {
+        "from": {
+          "name": "@sveltejs/vite-plugin-svelte",
+          "version": "6.2.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte"
+        },
+        "to": {
+          "name": "vite",
+          "version": "7.1.11",
+          "location": "node_modules/vite"
+        },
+        "type": "peer",
+        "range": "^6.3.0 || ^7.0.0"
+      },
+      {
+        "from": {
+          "name": "@sveltejs/vite-plugin-svelte-inspector",
+          "version": "5.0.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte-inspector"
+        },
+        "to": {
+          "name": "vite",
+          "version": "7.1.11",
+          "location": "node_modules/vite"
+        },
+        "type": "peer",
+        "range": "^6.3.0 || ^7.0.0"
+      },
+      {
+        "from": {
+          "name": "vite",
+          "version": "7.1.11",
+          "location": "node_modules/vite"
+        },
+        "to": {
+          "name": "rollup",
+          "version": "4.52.5",
+          "location": "node_modules/rollup"
+        },
+        "type": "prod",
+        "range": "^4.43.0"
+      },
+      {
+        "from": {
+          "name": "eslint-plugin-svelte",
+          "version": "3.12.4",
+          "location": "node_modules/eslint-plugin-svelte"
+        },
+        "to": {
+          "name": "postcss",
+          "version": "8.5.6",
+          "location": "node_modules/postcss"
+        },
+        "type": "prod",
+        "range": "^8.4.49"
+      },
+      {
+        "from": {
+          "location": "<repository>"
+        },
+        "to": {
+          "name": "eslint-plugin-svelte",
+          "version": "3.12.4",
+          "location": "node_modules/eslint-plugin-svelte"
+        },
+        "type": "dev",
+        "range": "3.12.4"
+      },
+      {
+        "from": {
+          "name": "postcss-load-config",
+          "version": "3.1.4",
+          "location": "node_modules/postcss-load-config"
+        },
+        "to": {
+          "name": "postcss",
+          "version": "8.5.6",
+          "location": "node_modules/postcss"
+        },
+        "type": "peerOptional",
+        "range": ">=8.0.9"
+      },
+      {
+        "from": {
+          "name": "eslint-plugin-svelte",
+          "version": "3.12.4",
+          "location": "node_modules/eslint-plugin-svelte"
+        },
+        "to": {
+          "name": "postcss-load-config",
+          "version": "3.1.4",
+          "location": "node_modules/postcss-load-config"
+        },
+        "type": "prod",
+        "range": "^3.1.4"
+      },
+      {
+        "from": {
+          "name": "postcss-safe-parser",
+          "version": "7.1.0",
+          "location": "node_modules/postcss-safe-parser"
+        },
+        "to": {
+          "name": "postcss",
+          "version": "8.5.6",
+          "location": "node_modules/postcss"
+        },
+        "type": "peer",
+        "range": "^8.4.31"
+      },
+      {
+        "from": {
+          "name": "eslint-plugin-svelte",
+          "version": "3.12.4",
+          "location": "node_modules/eslint-plugin-svelte"
+        },
+        "to": {
+          "name": "postcss-safe-parser",
+          "version": "7.1.0",
+          "location": "node_modules/postcss-safe-parser"
+        },
+        "type": "prod",
+        "range": "^7.0.0"
+      },
+      {
+        "from": {
+          "name": "postcss-scss",
+          "version": "4.0.9",
+          "location": "node_modules/postcss-scss"
+        },
+        "to": {
+          "name": "postcss",
+          "version": "8.5.6",
+          "location": "node_modules/postcss"
+        },
+        "type": "peer",
+        "range": "^8.4.29"
+      },
+      {
+        "from": {
+          "name": "svelte-eslint-parser",
+          "version": "1.9.0",
+          "location": "node_modules/svelte-eslint-parser"
+        },
+        "to": {
+          "name": "postcss-scss",
+          "version": "4.0.9",
+          "location": "node_modules/postcss-scss"
+        },
+        "type": "prod",
+        "range": "^4.0.9"
+      },
+      {
+        "from": {
+          "name": "eslint-plugin-svelte",
+          "version": "3.12.4",
+          "location": "node_modules/eslint-plugin-svelte"
+        },
+        "to": {
+          "name": "svelte-eslint-parser",
+          "version": "1.9.0",
+          "location": "node_modules/svelte-eslint-parser"
+        },
+        "type": "prod",
+        "range": "^1.3.0"
+      },
+      {
+        "from": {
+          "name": "svelte-eslint-parser",
+          "version": "1.9.0",
+          "location": "node_modules/svelte-eslint-parser"
+        },
+        "to": {
+          "name": "postcss",
+          "version": "8.5.6",
+          "location": "node_modules/postcss"
+        },
+        "type": "prod",
+        "range": "^8.4.49"
+      },
+      {
+        "from": {
+          "name": "vite",
+          "version": "7.1.11",
+          "location": "node_modules/vite"
+        },
+        "to": {
+          "name": "postcss",
+          "version": "8.5.6",
+          "location": "node_modules/postcss"
+        },
+        "type": "prod",
+        "range": "^8.5.6"
+      },
+      {
+        "from": {
+          "name": "postcss",
+          "version": "8.5.6",
+          "location": "node_modules/postcss"
+        },
+        "to": {
+          "name": "source-map-js",
+          "version": "1.2.1",
+          "location": "node_modules/source-map-js"
+        },
+        "type": "prod",
+        "range": "^1.2.1"
+      },
+      {
+        "from": {
+          "name": "postcss",
+          "version": "8.5.6",
+          "location": "node_modules/postcss"
+        },
+        "to": {
+          "name": "nanoid",
+          "version": "3.3.11",
+          "location": "node_modules/nanoid"
+        },
+        "type": "prod",
+        "range": "^3.3.11"
+      },
+      {
+        "from": {
+          "name": "fdir",
+          "version": "6.5.0",
+          "location": "node_modules/fdir"
+        },
+        "to": {
+          "name": "picomatch",
+          "version": "4.0.3",
+          "location": "node_modules/picomatch"
+        },
+        "type": "peerOptional",
+        "range": "^3 || ^4"
+      },
+      {
+        "from": {
+          "name": "svelte-check",
+          "version": "4.3.3",
+          "location": "node_modules/svelte-check"
+        },
+        "to": {
+          "name": "fdir",
+          "version": "6.5.0",
+          "location": "node_modules/fdir"
+        },
+        "type": "prod",
+        "range": "^6.2.0"
+      },
+      {
+        "from": {
+          "location": "<repository>"
+        },
+        "to": {
+          "name": "svelte-check",
+          "version": "4.3.3",
+          "location": "node_modules/svelte-check"
+        },
+        "type": "dev",
+        "range": "4.3.3"
+      },
+      {
+        "from": {
+          "name": "tinyglobby",
+          "version": "0.2.15",
+          "location": "node_modules/tinyglobby"
+        },
+        "to": {
+          "name": "fdir",
+          "version": "6.5.0",
+          "location": "node_modules/fdir"
+        },
+        "type": "prod",
+        "range": "^6.5.0"
+      },
+      {
+        "from": {
+          "name": "vite",
+          "version": "7.1.11",
+          "location": "node_modules/vite"
+        },
+        "to": {
+          "name": "tinyglobby",
+          "version": "0.2.15",
+          "location": "node_modules/tinyglobby"
+        },
+        "type": "prod",
+        "range": "^0.2.15"
+      },
+      {
+        "from": {
+          "name": "vite",
+          "version": "7.1.11",
+          "location": "node_modules/vite"
+        },
+        "to": {
+          "name": "fdir",
+          "version": "6.5.0",
+          "location": "node_modules/fdir"
+        },
+        "type": "prod",
+        "range": "^6.5.0"
+      },
+      {
+        "from": {
+          "name": "tinyglobby",
+          "version": "0.2.15",
+          "location": "node_modules/tinyglobby"
+        },
+        "to": {
+          "name": "picomatch",
+          "version": "4.0.3",
+          "location": "node_modules/picomatch"
+        },
+        "type": "prod",
+        "range": "^4.0.3"
+      },
+      {
+        "from": {
+          "name": "vite",
+          "version": "7.1.11",
+          "location": "node_modules/vite"
+        },
+        "to": {
+          "name": "picomatch",
+          "version": "4.0.3",
+          "location": "node_modules/picomatch"
+        },
+        "type": "prod",
+        "range": "^4.0.3"
+      },
+      {
+        "from": {
+          "name": "micromatch",
+          "version": "4.0.8",
+          "location": "node_modules/micromatch"
+        },
+        "to": {
+          "name": "picomatch",
+          "version": "2.3.1",
+          "location": "node_modules/micromatch/node_modules/picomatch"
+        },
+        "type": "prod",
+        "range": "^2.3.1"
+      },
+      {
+        "from": {
+          "name": "fast-glob",
+          "version": "3.3.3",
+          "location": "node_modules/fast-glob"
+        },
+        "to": {
+          "name": "micromatch",
+          "version": "4.0.8",
+          "location": "node_modules/micromatch"
+        },
+        "type": "prod",
+        "range": "^4.0.8"
+      },
+      {
+        "from": {
+          "name": "globby",
+          "version": "11.1.0",
+          "location": "node_modules/globby"
+        },
+        "to": {
+          "name": "fast-glob",
+          "version": "3.3.3",
+          "location": "node_modules/fast-glob"
+        },
+        "type": "prod",
+        "range": "^3.2.9"
+      },
+      {
+        "from": {
+          "name": "gh-pages",
+          "version": "6.3.0",
+          "location": "node_modules/gh-pages"
+        },
+        "to": {
+          "name": "globby",
+          "version": "11.1.0",
+          "location": "node_modules/globby"
+        },
+        "type": "prod",
+        "range": "^11.1.0"
+      },
+      {
+        "from": {
+          "location": "<repository>"
+        },
+        "to": {
+          "name": "gh-pages",
+          "version": "6.3.0",
+          "location": "node_modules/gh-pages"
+        },
+        "type": "dev",
+        "range": "^6.3.0"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/typescript-estree",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/typescript-estree"
+        },
+        "to": {
+          "name": "fast-glob",
+          "version": "3.3.3",
+          "location": "node_modules/fast-glob"
+        },
+        "type": "prod",
+        "range": "^3.3.2"
+      },
+      {
+        "from": {
+          "name": "typescript-eslint",
+          "version": "8.46.2",
+          "location": "node_modules/typescript-eslint"
+        },
+        "to": {
+          "name": "@typescript-eslint/typescript-estree",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/typescript-estree"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "location": "<repository>"
+        },
+        "to": {
+          "name": "typescript-eslint",
+          "version": "8.46.2",
+          "location": "node_modules/typescript-eslint"
+        },
+        "type": "dev",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/parser",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/parser"
+        },
+        "to": {
+          "name": "@typescript-eslint/typescript-estree",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/typescript-estree"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "typescript-eslint",
+          "version": "8.46.2",
+          "location": "node_modules/typescript-eslint"
+        },
+        "to": {
+          "name": "@typescript-eslint/parser",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/parser"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/eslint-plugin",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/eslint-plugin"
+        },
+        "to": {
+          "name": "@typescript-eslint/parser",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/parser"
+        },
+        "type": "peer",
+        "range": "^8.46.2"
+      },
+      {
+        "from": {
+          "name": "typescript-eslint",
+          "version": "8.46.2",
+          "location": "node_modules/typescript-eslint"
+        },
+        "to": {
+          "name": "@typescript-eslint/eslint-plugin",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/eslint-plugin"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/utils"
+        },
+        "to": {
+          "name": "@typescript-eslint/typescript-estree",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/typescript-estree"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "typescript-eslint",
+          "version": "8.46.2",
+          "location": "node_modules/typescript-eslint"
+        },
+        "to": {
+          "name": "@typescript-eslint/utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/utils"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/eslint-plugin",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/eslint-plugin"
+        },
+        "to": {
+          "name": "@typescript-eslint/utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/utils"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/type-utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/type-utils"
+        },
+        "to": {
+          "name": "@typescript-eslint/utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/utils"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/eslint-plugin",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/eslint-plugin"
+        },
+        "to": {
+          "name": "@typescript-eslint/type-utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/type-utils"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/type-utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/type-utils"
+        },
+        "to": {
+          "name": "@typescript-eslint/typescript-estree",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/typescript-estree"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "micromatch",
+          "version": "4.0.8",
+          "location": "node_modules/micromatch"
+        },
+        "to": {
+          "name": "braces",
+          "version": "3.0.3",
+          "location": "node_modules/braces"
+        },
+        "type": "prod",
+        "range": "^3.0.3"
+      }
+    ],
+    "afterParentEdges": [
+      {
+        "from": {
+          "location": "<repository>"
+        },
+        "to": {
+          "name": "vite",
+          "version": "7.3.7",
+          "location": "node_modules/vite"
+        },
+        "type": "dev",
+        "range": "7.3.7"
+      },
+      {
+        "from": {
+          "name": "@sveltejs/vite-plugin-svelte",
+          "version": "6.2.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte"
+        },
+        "to": {
+          "name": "vite",
+          "version": "7.3.7",
+          "location": "node_modules/vite"
+        },
+        "type": "peer",
+        "range": "^6.3.0 || ^7.0.0"
+      },
+      {
+        "from": {
+          "location": "<repository>"
+        },
+        "to": {
+          "name": "@sveltejs/vite-plugin-svelte",
+          "version": "6.2.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte"
+        },
+        "type": "dev",
+        "range": "^6.2.1"
+      },
+      {
+        "from": {
+          "name": "@sveltejs/vite-plugin-svelte-inspector",
+          "version": "5.0.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte-inspector"
+        },
+        "to": {
+          "name": "@sveltejs/vite-plugin-svelte",
+          "version": "6.2.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte"
+        },
+        "type": "peer",
+        "range": "^6.0.0-next.0"
+      },
+      {
+        "from": {
+          "name": "@sveltejs/vite-plugin-svelte",
+          "version": "6.2.1"
+        },
+        "to": {
+          "name": "@sveltejs/vite-plugin-svelte-inspector",
+          "version": "5.0.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte-inspector"
+        },
+        "type": "prod",
+        "range": "^5.0.0"
+      },
+      {
+        "from": {
+          "name": "@sveltejs/vite-plugin-svelte-inspector",
+          "version": "5.0.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte-inspector"
+        },
+        "to": {
+          "name": "vite",
+          "version": "7.3.7",
+          "location": "node_modules/vite"
+        },
+        "type": "peer",
+        "range": "^6.3.0 || ^7.0.0"
+      },
+      {
+        "from": {
+          "name": "vitefu",
+          "version": "1.1.1",
+          "location": "node_modules/vitefu"
+        },
+        "to": {
+          "name": "vite",
+          "version": "7.3.7",
+          "location": "node_modules/vite"
+        },
+        "type": "peerOptional",
+        "range": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0-beta.0"
+      },
+      {
+        "from": {
+          "name": "@sveltejs/vite-plugin-svelte",
+          "version": "6.2.1",
+          "location": "node_modules/@sveltejs/vite-plugin-svelte"
+        },
+        "to": {
+          "name": "vitefu",
+          "version": "1.1.1",
+          "location": "node_modules/vitefu"
+        },
+        "type": "prod",
+        "range": "^1.1.1"
+      },
+      {
+        "from": {
+          "name": "vite",
+          "version": "7.3.7",
+          "location": "node_modules/vite"
+        },
+        "to": {
+          "name": "rollup",
+          "version": "4.64.12",
+          "location": "node_modules/rollup"
+        },
+        "type": "prod",
+        "range": "^4.43.0"
+      },
+      {
+        "from": {
+          "name": "eslint-plugin-svelte",
+          "version": "3.12.4",
+          "location": "node_modules/eslint-plugin-svelte"
+        },
+        "to": {
+          "name": "postcss",
+          "version": "8.5.31",
+          "location": "node_modules/postcss"
+        },
+        "type": "prod",
+        "range": "^8.4.49"
+      },
+      {
+        "from": {
+          "location": "<repository>"
+        },
+        "to": {
+          "name": "eslint-plugin-svelte",
+          "version": "3.12.4",
+          "location": "node_modules/eslint-plugin-svelte"
+        },
+        "type": "dev",
+        "range": "3.12.4"
+      },
+      {
+        "from": {
+          "name": "postcss-load-config",
+          "version": "3.1.4",
+          "location": "node_modules/postcss-load-config"
+        },
+        "to": {
+          "name": "postcss",
+          "version": "8.5.31",
+          "location": "node_modules/postcss"
+        },
+        "type": "peerOptional",
+        "range": ">=8.0.9"
+      },
+      {
+        "from": {
+          "name": "eslint-plugin-svelte",
+          "version": "3.12.4",
+          "location": "node_modules/eslint-plugin-svelte"
+        },
+        "to": {
+          "name": "postcss-load-config",
+          "version": "3.1.4",
+          "location": "node_modules/postcss-load-config"
+        },
+        "type": "prod",
+        "range": "^3.1.4"
+      },
+      {
+        "from": {
+          "name": "postcss-safe-parser",
+          "version": "7.1.0",
+          "location": "node_modules/postcss-safe-parser"
+        },
+        "to": {
+          "name": "postcss",
+          "version": "8.5.31",
+          "location": "node_modules/postcss"
+        },
+        "type": "peer",
+        "range": "^8.4.31"
+      },
+      {
+        "from": {
+          "name": "eslint-plugin-svelte",
+          "version": "3.12.4",
+          "location": "node_modules/eslint-plugin-svelte"
+        },
+        "to": {
+          "name": "postcss-safe-parser",
+          "version": "7.1.0",
+          "location": "node_modules/postcss-safe-parser"
+        },
+        "type": "prod",
+        "range": "^7.0.0"
+      },
+      {
+        "from": {
+          "name": "postcss-scss",
+          "version": "4.0.9",
+          "location": "node_modules/postcss-scss"
+        },
+        "to": {
+          "name": "postcss",
+          "version": "8.5.31",
+          "location": "node_modules/postcss"
+        },
+        "type": "peer",
+        "range": "^8.4.29"
+      },
+      {
+        "from": {
+          "name": "svelte-eslint-parser",
+          "version": "1.9.0",
+          "location": "node_modules/svelte-eslint-parser"
+        },
+        "to": {
+          "name": "postcss-scss",
+          "version": "4.0.9",
+          "location": "node_modules/postcss-scss"
+        },
+        "type": "prod",
+        "range": "^4.0.9"
+      },
+      {
+        "from": {
+          "name": "eslint-plugin-svelte",
+          "version": "3.12.4",
+          "location": "node_modules/eslint-plugin-svelte"
+        },
+        "to": {
+          "name": "svelte-eslint-parser",
+          "version": "1.9.0",
+          "location": "node_modules/svelte-eslint-parser"
+        },
+        "type": "prod",
+        "range": "^1.3.0"
+      },
+      {
+        "from": {
+          "name": "svelte-eslint-parser",
+          "version": "1.9.0",
+          "location": "node_modules/svelte-eslint-parser"
+        },
+        "to": {
+          "name": "postcss",
+          "version": "8.5.31",
+          "location": "node_modules/postcss"
+        },
+        "type": "prod",
+        "range": "^8.4.49"
+      },
+      {
+        "from": {
+          "name": "vite",
+          "version": "7.3.7",
+          "location": "node_modules/vite"
+        },
+        "to": {
+          "name": "postcss",
+          "version": "8.5.31",
+          "location": "node_modules/postcss"
+        },
+        "type": "prod",
+        "range": "^8.5.6"
+      },
+      {
+        "from": {
+          "name": "postcss",
+          "version": "8.5.31",
+          "location": "node_modules/postcss"
+        },
+        "to": {
+          "name": "source-map-js",
+          "version": "1.2.2",
+          "location": "node_modules/source-map-js"
+        },
+        "type": "prod",
+        "range": "^1.2.2"
+      },
+      {
+        "from": {
+          "name": "postcss",
+          "version": "8.5.31",
+          "location": "node_modules/postcss"
+        },
+        "to": {
+          "name": "nanoid",
+          "version": "3.3.20",
+          "location": "node_modules/nanoid"
+        },
+        "type": "prod",
+        "range": "^3.3.20"
+      },
+      {
+        "from": {
+          "name": "micromatch",
+          "version": "4.0.8",
+          "location": "node_modules/micromatch"
+        },
+        "to": {
+          "name": "picomatch",
+          "version": "2.3.2",
+          "location": "node_modules/micromatch/node_modules/picomatch"
+        },
+        "type": "prod",
+        "range": "^2.3.1"
+      },
+      {
+        "from": {
+          "name": "fast-glob",
+          "version": "3.3.3",
+          "location": "node_modules/fast-glob"
+        },
+        "to": {
+          "name": "micromatch",
+          "version": "4.0.8",
+          "location": "node_modules/micromatch"
+        },
+        "type": "prod",
+        "range": "^4.0.8"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/typescript-estree",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/typescript-estree"
+        },
+        "to": {
+          "name": "fast-glob",
+          "version": "3.3.3",
+          "location": "node_modules/fast-glob"
+        },
+        "type": "prod",
+        "range": "^3.3.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/parser",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/parser"
+        },
+        "to": {
+          "name": "@typescript-eslint/typescript-estree",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/typescript-estree"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/eslint-plugin",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/eslint-plugin"
+        },
+        "to": {
+          "name": "@typescript-eslint/parser",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/parser"
+        },
+        "type": "peer",
+        "range": "^8.46.2"
+      },
+      {
+        "from": {
+          "name": "typescript-eslint",
+          "version": "8.46.2",
+          "location": "node_modules/typescript-eslint"
+        },
+        "to": {
+          "name": "@typescript-eslint/eslint-plugin",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/eslint-plugin"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "location": "<repository>"
+        },
+        "to": {
+          "name": "typescript-eslint",
+          "version": "8.46.2",
+          "location": "node_modules/typescript-eslint"
+        },
+        "type": "dev",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "typescript-eslint",
+          "version": "8.46.2",
+          "location": "node_modules/typescript-eslint"
+        },
+        "to": {
+          "name": "@typescript-eslint/parser",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/parser"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/type-utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/type-utils"
+        },
+        "to": {
+          "name": "@typescript-eslint/typescript-estree",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/typescript-estree"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/eslint-plugin",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/eslint-plugin"
+        },
+        "to": {
+          "name": "@typescript-eslint/type-utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/type-utils"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/utils"
+        },
+        "to": {
+          "name": "@typescript-eslint/typescript-estree",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/typescript-estree"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/eslint-plugin",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/eslint-plugin"
+        },
+        "to": {
+          "name": "@typescript-eslint/utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/utils"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "@typescript-eslint/type-utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/type-utils"
+        },
+        "to": {
+          "name": "@typescript-eslint/utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/utils"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "typescript-eslint",
+          "version": "8.46.2",
+          "location": "node_modules/typescript-eslint"
+        },
+        "to": {
+          "name": "@typescript-eslint/utils",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/utils"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "typescript-eslint",
+          "version": "8.46.2",
+          "location": "node_modules/typescript-eslint"
+        },
+        "to": {
+          "name": "@typescript-eslint/typescript-estree",
+          "version": "8.46.2",
+          "location": "node_modules/@typescript-eslint/typescript-estree"
+        },
+        "type": "prod",
+        "range": "8.46.2"
+      },
+      {
+        "from": {
+          "name": "globby",
+          "version": "11.1.0",
+          "location": "node_modules/globby"
+        },
+        "to": {
+          "name": "fast-glob",
+          "version": "3.3.3",
+          "location": "node_modules/fast-glob"
+        },
+        "type": "prod",
+        "range": "^3.2.9"
+      },
+      {
+        "from": {
+          "name": "gh-pages",
+          "version": "6.3.0",
+          "location": "node_modules/gh-pages"
+        },
+        "to": {
+          "name": "globby",
+          "version": "11.1.0",
+          "location": "node_modules/globby"
+        },
+        "type": "prod",
+        "range": "^11.1.0"
+      },
+      {
+        "from": {
+          "location": "<repository>"
+        },
+        "to": {
+          "name": "gh-pages",
+          "version": "6.3.0",
+          "location": "node_modules/gh-pages"
+        },
+        "type": "dev",
+        "range": "^6.3.0"
+      },
+      {
+        "from": {
+          "name": "fdir",
+          "version": "6.5.0",
+          "location": "node_modules/fdir"
+        },
+        "to": {
+          "name": "picomatch",
+          "version": "4.0.7",
+          "location": "node_modules/picomatch"
+        },
+        "type": "peerOptional",
+        "range": "^3 || ^4"
+      },
+      {
+        "from": {
+          "name": "svelte-check",
+          "version": "4.3.3",
+          "location": "node_modules/svelte-check"
+        },
+        "to": {
+          "name": "fdir",
+          "version": "6.5.0",
+          "location": "node_modules/fdir"
+        },
+        "type": "prod",
+        "range": "^6.2.0"
+      },
+      {
+        "from": {
+          "location": "<repository>"
+        },
+        "to": {
+          "name": "svelte-check",
+          "version": "4.3.3",
+          "location": "node_modules/svelte-check"
+        },
+        "type": "dev",
+        "range": "4.3.3"
+      },
+      {
+        "from": {
+          "name": "tinyglobby",
+          "version": "0.2.15",
+          "location": "node_modules/tinyglobby"
+        },
+        "to": {
+          "name": "fdir",
+          "version": "6.5.0",
+          "location": "node_modules/fdir"
+        },
+        "type": "prod",
+        "range": "^6.5.0"
+      },
+      {
+        "from": {
+          "name": "vite",
+          "version": "7.3.7",
+          "location": "node_modules/vite"
+        },
+        "to": {
+          "name": "tinyglobby",
+          "version": "0.2.15",
+          "location": "node_modules/tinyglobby"
+        },
+        "type": "prod",
+        "range": "^0.2.15"
+      },
+      {
+        "from": {
+          "name": "vite",
+          "version": "7.3.7",
+          "location": "node_modules/vite"
+        },
+        "to": {
+          "name": "fdir",
+          "version": "6.5.0",
+          "location": "node_modules/fdir"
+        },
+        "type": "prod",
+        "range": "^6.5.0"
+      },
+      {
+        "from": {
+          "name": "tinyglobby",
+          "version": "0.2.15",
+          "location": "node_modules/tinyglobby"
+        },
+        "to": {
+          "name": "picomatch",
+          "version": "4.0.7",
+          "location": "node_modules/picomatch"
+        },
+        "type": "prod",
+        "range": "^4.0.3"
+      },
+      {
+        "from": {
+          "name": "vite",
+          "version": "7.3.7",
+          "location": "node_modules/vite"
+        },
+        "to": {
+          "name": "picomatch",
+          "version": "4.0.7",
+          "location": "node_modules/picomatch"
+        },
+        "type": "prod",
+        "range": "^4.0.3"
+      },
+      {
+        "from": {
+          "name": "micromatch",
+          "version": "4.0.8",
+          "location": "node_modules/micromatch"
+        },
+        "to": {
+          "name": "braces",
+          "version": "3.0.3",
+          "location": "node_modules/braces"
+        },
+        "type": "prod",
+        "range": "^3.0.3"
+      }
+    ]
+  }
+}

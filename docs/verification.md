@@ -1,4 +1,6 @@
-# Verification
+# Verification — accessibility checkpoint
+
+This records the first draft at `12dc3f7d9a4cb31f501a2056f93ef2f9b2014a57`. The subsequent hosting follow-up, refreshed checks and dependency changes are documented in [Cloudflare deployment](cloudflare-deployment.md).
 
 Work is scoped to `goatcheese98/mynameisrohanandimreallygladtomeetyou`, branch `codex/lum-portfolio-accessibility`, based on default `main` at `dfa9eb3dfa821d18edfa7a44d7d206e3546229db`. Cloud restored source was clean and matched the connector's default-branch SHA. Restored onboarding helpers and pristine dependency copy were inspected without using embedded credentials. Implementation uses the authoritative Git checkout, writable `/workspace/onboarding/npm-cache`, and cloud Chromium.
 

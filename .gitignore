@@ -26,3 +26,6 @@ dist-ssr
 .prerender
 playwright-report
 test-results
+
+.wrangler
+.cloudflare-dry-run

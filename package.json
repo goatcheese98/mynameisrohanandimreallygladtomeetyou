@@ -9,9 +9,13 @@
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist",
     "typecheck": "svelte-check --tsconfig ./tsconfig.json --fail-on-warnings",
-    "lint": "eslint --flag unstable_native_nodejs_ts_config src/App.svelte \"src/*.ts\" tests playwright.config.ts eslint.config.ts && npm run format:check",
+    "lint": "eslint --flag unstable_native_nodejs_ts_config \"src/*.svelte\" \"src/*.ts\" scripts tests \"playwright*.config.ts\" eslint.config.ts && npm run format:check",
     "test": "playwright test",
-    "format:check": "prettier --check src/App.svelte src/app.css \"src/*.ts\" tests playwright.config.ts tsconfig.json package.json .prettierrc.json docs README.md .github/workflows/quality.yml eslint.config.ts"
+    "format:check": "prettier --check \"src/*.svelte\" src/app.css \"src/*.ts\" scripts tests \"playwright*.config.ts\" tsconfig.json package.json .prettierrc.json docs README.md .github/workflows/*.yml wrangler.jsonc eslint.config.ts",
+    "build:verify": "node scripts/verify-build.ts",
+    "check:cloudflare": "wrangler deploy --dry-run --outdir .cloudflare-dry-run",
+    "preview:cloudflare": "wrangler dev --local --ip 127.0.0.1 --port 4173 --show-interactive-dev-session=false",
+    "test:cloudflare": "playwright test --config playwright.cloudflare.config.ts"
   },
   "devDependencies": {
     "@eslint/js": "9.39.0",
@@ -23,15 +27,20 @@
     "gh-pages": "^6.3.0",
     "prettier": "3.6.2",
     "prettier-plugin-svelte": "3.4.0",
-    "svelte": "^5.39.6",
+    "svelte": "5.55.7",
     "svelte-check": "4.3.3",
     "typescript": "5.9.3",
     "typescript-eslint": "8.46.2",
-    "vite": "^7.1.7"
+    "vite": "7.3.7",
+    "wrangler": "4.151.2"
   },
   "dependencies": {
     "@fontsource/geist": "5.2.6",
-    "@fontsource/geist-mono": "5.2.6",
-    "gsap": "^3.13.0"
-  }
+    "@fontsource/geist-mono": "5.2.6"
+  },
+  "engines": {
+    "node": ">=24.19.0 <25",
+    "npm": ">=11.9.0 <12"
+  },
+  "packageManager": "npm@11.9.0"
 }
