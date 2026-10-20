@@ -181,10 +181,14 @@ test("reduced motion remains static, including a live preference change", async 
 test("200% text zoom reflows and preserves navigation", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 900 });
   await page.goto("/");
-  await page.addStyleTag({
-    content:
-      ":root { font-size: 32px; --fs-lg: 32px; --fs-xl: 40px; --fs-2xl: 48px; --fs-3xl: 60px; --leading-body: 48px; } h1, h2, h3 { line-height: 1.35; }",
-  });
+  // Serve the magnification fixture from the same origin, respecting the production CSP.
+  await page.route("**/__text-zoom.css", (route) =>
+    route.fulfill({
+      contentType: "text/css",
+      body: ":root { font-size: 32px; --fs-lg: 32px; --fs-xl: 40px; --fs-2xl: 48px; --fs-3xl: 60px; --leading-body: 48px; } h1, h2, h3 { line-height: 1.35; }",
+    }),
+  );
+  await page.addStyleTag({ url: "/__text-zoom.css" });
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
